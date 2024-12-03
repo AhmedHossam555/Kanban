@@ -1,2 +1,2 @@
 <app-left-side-bar [isSideCollapse]="isLeftSideCollapse()" (changeCollapse)="collapseValue($event)"></app-left-side-bar>
-<app-main ></app-main>
+<app-main [isLeftSideCollapse]="isLeftSideCollapse()" [screenWidth]="screenWidth()" ></app-main>
