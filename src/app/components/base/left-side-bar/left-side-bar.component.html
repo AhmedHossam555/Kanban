@@ -1,8 +1,32 @@
-<div class="sidenav">
+<div class="sidenav" [ngClass]="isSideCollapse()? 'sidenav-collapsed':''">
     <div class="logo-container">
-        <button class="logo">
-            <i class="fal fa-bars"></i>
-        </button>
+        <button class="logo" (click)="toggleCollapse()">
+            <i class="fa-solid fa-bars"></i>
+         </button>
+         @if(!isSideCollapse()){
+            <div class="logo-text">
+                App
+             </div>
+         }
+         @if(!isSideCollapse()){
+            <button class="btn-close" (click)="closeCollapse()">
+                <i class="fa-solid fa-x fa-times "></i>
+             </button>
+         }
+    </div>
+    <div class="sidenav-nav">
+        @for (item of items; track $index) {
+          <li class="sidenav-nav-item">
+            <a class="sidenav-nav-link" [routerLink]="item.routerLink" routerLinkActive="active" [routerLinkActiveOptions] = "{exact: true}">
+                <i class="sidenav-link-icon" [class]="item.icon"></i>
+                @if(!isSideCollapse()){
+                    <span class="sidenav-link-text">
+                        {{item.label}}
+                    </span>
+                }
+            </a>
+          </li>
+        }
     </div>
 
 </div>
