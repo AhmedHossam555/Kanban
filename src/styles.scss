@@ -5,3 +5,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 body {
     overflow: hidden !important;
 }
+$main-color: #3b82f6;
+.bg-main {
+    background-color:$main-color;
+}
+.text-main {
+    color: $main-color;
+}
