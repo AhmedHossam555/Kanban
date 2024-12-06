@@ -6,16 +6,14 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 $main-color: #3b82f6;
-$second-color: #707070;
-$three-color: #ecf0f5;
-.body-color {
-    background-color: #E4e9f7;
+
+$second-color:#0f172a ;
+$three-color: #eef1f9;
+.bg-body {
+    background-color: $three-color;
 }
 .bg-main {
     background-color:$main-color;
-}
-.bg-three {
-    background-color: $three-color;
 }
 .text-main {
     color: $main-color;
@@ -29,3 +27,8 @@ $three-color: #ecf0f5;
 .animate-1 {
     transition: all 0.2s ease;
 }
+.text-default-600 {
+    --tw-text-opacity: 1 !important;
+    color: #475569 !important;
+}
+

@@ -1,0 +1,13 @@
+input {
+    transition: all 0.3s ease-in-out;
+}
+input:focus {
+    border-width: 0.5px !important;
+}
+
+.task.active ul {
+    display: block !important;
+}
+.task ul li.active i {
+    opacity: 1 !important;
+}
