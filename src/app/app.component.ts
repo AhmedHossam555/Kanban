@@ -29,6 +29,8 @@ export class AppComponent {
     this.screenWidth.set(window.innerWidth);
     if(this.screenWidth() < 992){
       this.isLeftSideCollapse.set(true);
+    }else{
+      this.isLeftSideCollapse.set(false)
     }
   }
   collapseValue(isCollapse:boolean){
