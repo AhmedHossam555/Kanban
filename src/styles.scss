@@ -1,14 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-body {
-    overflow: hidden !important;
-}
+
 $main-color: #3b82f6;
+$second-color: #707070;
+$three-color: #E4e9f7;
+.body-color {
+    background-color: #E4e9f7;
+}
 .bg-main {
     background-color:$main-color;
 }
+.bg-three {
+    background-color: $three-color;
+}
 .text-main {
     color: $main-color;
+}
+.text-second {
+    color: $second-color;
+}
+.bg-second {
+    background-color: $second-color;
+}
+.animate-1 {
+    transition: all 0.2s ease;
 }

@@ -32,7 +32,5 @@ export class LeftSideBarComponent {
   toggleCollapse(){
     this.changeCollapse.emit(!this.isSideCollapse());
   }
-  closeCollapse(){
-    this.changeCollapse.emit(true);
-  }
+
 }

@@ -1,0 +1,22 @@
+.toggle {
+    width: 20px;
+    height: 16px;
+}
+.toggle > div {
+    height: 2px;
+}
+.toggle > div:nth-child(2){
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.toggle.active  {
+    div:nth-child(2) {
+        opacity: 0;
+    }
+    div:nth-child(1) {
+        transform: rotate(-45deg);
+    }
+    div:nth-child(3) {
+        transform: rotate(45deg);
+    }
+}

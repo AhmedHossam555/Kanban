@@ -1,3 +1,16 @@
-<header class="px-6 py-4">
-
+<header class="px-6 py-4 bg-white shadow-sm text-second text-lg ">
+    <div class="flex items-center gap-5">
+        <div class="toggle cursor-pointer overflow-hidden" [ngClass]="classToggle()"  (click)="onToggle($event)" >
+            <div class="bg-second animate-1"></div>
+            <div class="bg-second animate-1"></div>
+            <div class="bg-second animate-1"></div>
+        </div>
+        <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="hidden md:inline-block ms-1 ">Search...</span>
+        </button>
+    </div>
+      
+  
+   
 </header>

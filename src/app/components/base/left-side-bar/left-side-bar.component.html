@@ -8,11 +8,7 @@
                 App
              </div>
          }
-         @if(!isSideCollapse()){
-            <button class="btn-close" (click)="closeCollapse()">
-                <i class="fa-solid fa-x fa-times "></i>
-             </button>
-         }
+       
     </div>
     <div class="sidenav-nav">
         @for (item of items; track $index) {
